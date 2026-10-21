@@ -1,0 +1,10 @@
+# Visual Studio / SSIS build output and user settings
+.vs/
+bin/
+obj/
+*.user
+*.suo
+
+# backups made while building the package
+*.backup*.dtsx
+_to_delete/

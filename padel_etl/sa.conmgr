@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="sa"
+  DTS:DTSID="{7FA582B1-0FD4-4EF7-9D79-40E1000778BA}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=.;Initial Catalog=SA_Padel;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-padel_etl-{7FA582B1-0FD4-4EF7-9D79-40E1000778BA}sa;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="dw"
+  DTS:DTSID="{F059DCD0-AA63-44DA-B592-F369A4E589C2}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=.;Initial Catalog=DW_Padel;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-padel_etl-{F059DCD0-AA63-44DA-B592-F369A4E589C2}dw;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

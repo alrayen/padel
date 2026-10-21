@@ -1,0 +1,97 @@
+country_code,country_name,continent
+ALG,Algeria,Africa
+ARG,Argentina,South America
+ARM,Armenia,Asia
+AUS,Australia,Oceania
+AUT,Austria,Europe
+AZE,Azerbaijan,Asia
+BEL,Belgium,Europe
+BIH,Bosnia and Herzegovina,Europe
+BLR,Belarus,Europe
+BRA,Brazil,South America
+BRN,Bahrain,Asia
+BUL,Bulgaria,Europe
+BUR,Burkina Faso,Africa
+CAN,Canada,North America
+CHI,Chile,South America
+CHN,China,Asia
+CIV,Ivory Coast,Africa
+COL,Colombia,South America
+CRC,Costa Rica,North America
+CRO,Croatia,Europe
+CUB,Cuba,North America
+CYP,Cyprus,Europe
+CZE,Czech Republic,Europe
+DEN,Denmark,Europe
+DOM,Dominican Republic,North America
+ECU,Ecuador,South America
+EGY,Egypt,Africa
+ESP,Spain,Europe
+EST,Estonia,Europe
+FIN,Finland,Europe
+FRA,France,Europe
+GBR,United Kingdom,Europe
+GEO,Georgia,Asia
+GER,Germany,Europe
+GHA,Ghana,Africa
+GRE,Greece,Europe
+HKG,Hong Kong,Asia
+HON,Honduras,North America
+HUN,Hungary,Europe
+INA,Indonesia,Asia
+IND,India,Asia
+IRI,Iran,Asia
+IRL,Ireland,Europe
+ISR,Israel,Asia
+ITA,Italy,Europe
+JAM,Jamaica,North America
+JPN,Japan,Asia
+KAZ,Kazakhstan,Asia
+KSA,Saudi Arabia,Asia
+KUW,Kuwait,Asia
+LAT,Latvia,Europe
+LBN,Lebanon,Asia
+LTU,Lithuania,Europe
+LUX,Luxembourg,Europe
+MAR,Morocco,Africa
+MAS,Malaysia,Asia
+MDA,Moldova,Europe
+MEX,Mexico,North America
+MLT,Malta,Europe
+MON,Monaco,Europe
+MOZ,Mozambique,Africa
+NED,Netherlands,Europe
+NOR,Norway,Europe
+NZL,New Zealand,Oceania
+OMA,Oman,Asia
+PAK,Pakistan,Asia
+PAN,Panama,North America
+PAR,Paraguay,South America
+PER,Peru,South America
+PHI,Philippines,Asia
+POL,Poland,Europe
+POR,Portugal,Europe
+QAT,Qatar,Asia
+ROU,Romania,Europe
+RSA,South Africa,Africa
+RUS,Russia,Europe
+SEN,Senegal,Africa
+SIN,Singapore,Asia
+SLO,Slovenia,Europe
+SRB,Serbia,Europe
+SUD,Sudan,Africa
+SUI,Switzerland,Europe
+SVK,Slovakia,Europe
+SWE,Sweden,Europe
+THA,Thailand,Asia
+TPE,Chinese Taipei,Asia
+TUN,Tunisia,Africa
+TUR,Turkey,Europe
+UAE,United Arab Emirates,Asia
+UKR,Ukraine,Europe
+URU,Uruguay,South America
+USA,United States,North America
+UZB,Uzbekistan,Asia
+VEN,Venezuela,South America
+YEM,Yemen,Asia
+ZIM,Zimbabwe,Africa
