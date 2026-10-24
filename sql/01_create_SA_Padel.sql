@@ -1,7 +1,10 @@
 /* =====================================================================
    SA_Padel : Staging Area (zone de transit)
    Raw copy of the professor's CSV files + our reference files.
-   Columns = CSV headers, all text. Emptied (TRUNCATE) before each load
+   Columns = CSV headers. Text, except the dates and numbers: their type is
+   set once in the Flat File connection managers (Advanced tab), so the
+   SA already has the same types as the DW (no Data Conversion later).
+   Emptied (TRUNCATE) before each load
    by the package EL_SRC_SA.
    ===================================================================== */
 IF DB_ID('SA_Padel') IS NULL CREATE DATABASE SA_Padel;
@@ -31,18 +34,18 @@ GO
 CREATE TABLE dbo.Matchs_SA (
     match_id        INT IDENTITY(1,1) NOT NULL,   -- order of the match in the files -> match_number
     tournament      NVARCHAR(150),
-    [date]          NVARCHAR(20),
+    [date]          DATE,
     [round]         NVARCHAR(50),
     pair1_player1   NVARCHAR(150),
     pair1_country1  NVARCHAR(10),
     pair1_player2   NVARCHAR(150),
     pair1_country2  NVARCHAR(10),
-    pair1_seed      NVARCHAR(10),
+    pair1_seed      INT,                          -- 0 = not seeded (Tournament CSV : RetainNulls = False)
     pair2_player1   NVARCHAR(150),
     pair2_country1  NVARCHAR(10),
     pair2_player2   NVARCHAR(150),
     pair2_country2  NVARCHAR(10),
-    pair2_seed      NVARCHAR(10),
+    pair2_seed      INT,
     winner          NVARCHAR(10),
     score           NVARCHAR(50),
     source_file     NVARCHAR(260)                 -- Derived Column from @[User::Nomfichier]
@@ -53,8 +56,8 @@ CREATE TABLE dbo.Calendrier_SA (
     tournament      NVARCHAR(150),
     category        NVARCHAR(100),
     country         NVARCHAR(100),
-    start_date      NVARCHAR(20),
-    end_date        NVARCHAR(20),
+    start_date      DATE,
+    end_date        DATE,
     source_file     NVARCHAR(260)                 -- Derived Column constant per source
 );
 
@@ -62,8 +65,8 @@ CREATE TABLE dbo.Calendrier_SA (
 CREATE TABLE dbo.Joueurs_SA (
     name            NVARCHAR(150),
     country         NVARCHAR(10),
-    points          NVARCHAR(20),
-    position        NVARCHAR(20),
+    points          INT,
+    position        INT,
     move            NVARCHAR(20),
     gender          NVARCHAR(1)                   -- Derived Column "M" / "F"
 );
@@ -76,7 +79,7 @@ CREATE TABLE dbo.Produits_SA (
     product_type        NVARCHAR(100),
     tags                NVARCHAR(500),
     created_at          NVARCHAR(50),
-    price               NVARCHAR(20),
+    price               DECIMAL(10,2),
     sku                 NVARCHAR(50),
     image               NVARCHAR(500),
     weight              NVARCHAR(50),

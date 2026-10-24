@@ -48,7 +48,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x002C_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="133"
             DTS:TextQualified="True"
             DTS:ObjectName="date"
             DTS:DTSID="{8C41CAAB-A18A-495B-BAC3-B9633ED29F71}"
@@ -102,7 +102,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x002C_"
             DTS:MaximumWidth="10"
-            DTS:DataType="130"
+            DTS:DataType="3"
             DTS:TextQualified="True"
             DTS:ObjectName="pair1_seed"
             DTS:DTSID="{56D2B26D-9248-4AB7-BC00-E0B11C0B3F58}"
@@ -147,7 +147,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x002C_"
             DTS:MaximumWidth="10"
-            DTS:DataType="130"
+            DTS:DataType="3"
             DTS:TextQualified="True"
             DTS:ObjectName="pair2_seed"
             DTS:DTSID="{A63456D8-B7C0-491B-B415-A86905AD7248}"
@@ -221,7 +221,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x002C_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="133"
             DTS:TextQualified="True"
             DTS:ObjectName="start_date"
             DTS:DTSID="{40680CD9-5749-4688-81F1-A4AB164D55C7}"
@@ -230,7 +230,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x000D__x000A_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="133"
             DTS:TextQualified="True"
             DTS:ObjectName="end_date"
             DTS:DTSID="{FBD52864-3554-44DF-A927-8D5C22D7F822}"
@@ -286,7 +286,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x002C_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="133"
             DTS:TextQualified="True"
             DTS:ObjectName="start_date"
             DTS:DTSID="{6C2FBC54-F89C-43B9-B6EA-7C3F5F11CCB5}"
@@ -295,7 +295,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x000D__x000A_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="133"
             DTS:TextQualified="True"
             DTS:ObjectName="end_date"
             DTS:DTSID="{F7D17BD4-9213-4EAE-8BBB-052D4A759DBF}"
@@ -351,7 +351,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x002C_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="133"
             DTS:TextQualified="True"
             DTS:ObjectName="start_date"
             DTS:DTSID="{17A131E7-046B-4D3E-A78A-AD95AB4ED26F}"
@@ -360,10 +360,75 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x000D__x000A_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="133"
             DTS:TextQualified="True"
             DTS:ObjectName="end_date"
             DTS:DTSID="{9491F610-E099-4E45-B8E3-1AEB0531D472}"
+            DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Calendar 2025 CSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{1C3F9903-3A96-493D-8CBF-A98FCB93101D}"
+      DTS:ObjectName="Calendar 2025 CSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\gigabyte\source\repos\padel_etl\data\calendar-2025.csv">
+          <DTS:FlatFileColumns>
+          <DTS:FlatFileColumn
+            DTS:ColumnType="Delimited"
+            DTS:ColumnDelimiter="_x002C_"
+            DTS:MaximumWidth="150"
+            DTS:DataType="130"
+            DTS:TextQualified="True"
+            DTS:ObjectName="tournament"
+            DTS:DTSID="{37FE6B5B-24B1-4899-B40F-52E005A0F268}"
+            DTS:CreationName="" />
+          <DTS:FlatFileColumn
+            DTS:ColumnType="Delimited"
+            DTS:ColumnDelimiter="_x002C_"
+            DTS:MaximumWidth="100"
+            DTS:DataType="130"
+            DTS:TextQualified="True"
+            DTS:ObjectName="category"
+            DTS:DTSID="{5080112D-294B-41EA-AC75-E6A533587323}"
+            DTS:CreationName="" />
+          <DTS:FlatFileColumn
+            DTS:ColumnType="Delimited"
+            DTS:ColumnDelimiter="_x002C_"
+            DTS:MaximumWidth="100"
+            DTS:DataType="130"
+            DTS:TextQualified="True"
+            DTS:ObjectName="country"
+            DTS:DTSID="{62994480-D3CE-40F9-BD83-808798AA2E64}"
+            DTS:CreationName="" />
+          <DTS:FlatFileColumn
+            DTS:ColumnType="Delimited"
+            DTS:ColumnDelimiter="_x002C_"
+            DTS:MaximumWidth="20"
+            DTS:DataType="133"
+            DTS:TextQualified="True"
+            DTS:ObjectName="start_date"
+            DTS:DTSID="{06915151-240C-46AF-B94D-FBA2D2551428}"
+            DTS:CreationName="" />
+          <DTS:FlatFileColumn
+            DTS:ColumnType="Delimited"
+            DTS:ColumnDelimiter="_x000D__x000A_"
+            DTS:MaximumWidth="20"
+            DTS:DataType="133"
+            DTS:TextQualified="True"
+            DTS:ObjectName="end_date"
+            DTS:DTSID="{D124B517-02BD-4CD2-86C6-BE6895C2A14D}"
             DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -407,7 +472,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x002C_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="3"
             DTS:TextQualified="True"
             DTS:ObjectName="points"
             DTS:DTSID="{5BD8D028-B56E-45DA-90ED-DB098E055854}"
@@ -416,7 +481,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x002C_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="3"
             DTS:TextQualified="True"
             DTS:ObjectName="position"
             DTS:DTSID="{306089A5-803B-4992-AC7C-56F92A1DD9B5}"
@@ -472,7 +537,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x002C_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="3"
             DTS:TextQualified="True"
             DTS:ObjectName="points"
             DTS:DTSID="{B2CF4FB8-B232-4714-B46F-FE4385F56D30}"
@@ -481,7 +546,7 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x002C_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="3"
             DTS:TextQualified="True"
             DTS:ObjectName="position"
             DTS:DTSID="{54A13381-C593-41BC-92ED-687DEDAE46EC}"
@@ -573,7 +638,9 @@
             DTS:ColumnType="Delimited"
             DTS:ColumnDelimiter="_x002C_"
             DTS:MaximumWidth="20"
-            DTS:DataType="130"
+            DTS:DataType="131"
+            DTS:DataPrecision="10"
+            DTS:DataScale="2"
             DTS:TextQualified="True"
             DTS:ObjectName="price"
             DTS:DTSID="{1469707B-7137-4CE1-AF21-43564E2ADDCE}"
@@ -945,7 +1012,7 @@
                   <property
                     dataType="System.Boolean"
                     description="Specifies whether zero-length columns are treated as null."
-                    name="RetainNulls">true</property>
+                    name="RetainNulls">false</property>
                   <property
                     dataType="System.String"
                     description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
@@ -985,7 +1052,7 @@
                       </outputColumn>
                       <outputColumn
                         refId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].Columns[date]"
-                        dataType="wstr" length="20"
+                        dataType="dbDate"
                         errorOrTruncationOperation="Conversion"
                         errorRowDisposition="FailComponent"
                         externalMetadataColumnId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].ExternalColumns[date]"
@@ -1105,7 +1172,7 @@
                       </outputColumn>
                       <outputColumn
                         refId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].Columns[pair1_seed]"
-                        dataType="wstr" length="10"
+                        dataType="i4"
                         errorOrTruncationOperation="Conversion"
                         errorRowDisposition="FailComponent"
                         externalMetadataColumnId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].ExternalColumns[pair1_seed]"
@@ -1205,7 +1272,7 @@
                       </outputColumn>
                       <outputColumn
                         refId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].Columns[pair2_seed]"
-                        dataType="wstr" length="10"
+                        dataType="i4"
                         errorOrTruncationOperation="Conversion"
                         errorRowDisposition="FailComponent"
                         externalMetadataColumnId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].ExternalColumns[pair2_seed]"
@@ -1272,7 +1339,7 @@
                         name="tournament" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].ExternalColumns[date]"
-                        dataType="wstr" length="20"
+                        dataType="dbDate"
                         name="date" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].ExternalColumns[round]"
@@ -1296,7 +1363,7 @@
                         name="pair1_country2" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].ExternalColumns[pair1_seed]"
-                        dataType="wstr" length="10"
+                        dataType="i4"
                         name="pair1_seed" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].ExternalColumns[pair2_player1]"
@@ -1316,7 +1383,7 @@
                         name="pair2_country2" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].ExternalColumns[pair2_seed]"
-                        dataType="wstr" length="10"
+                        dataType="i4"
                         name="pair2_seed" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].ExternalColumns[winner]"
@@ -1510,7 +1577,7 @@
                         lineageId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].Columns[tournament]" />
                       <inputColumn
                         refId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].Columns[date]"
-                        cachedDataType="wstr" cachedLength="20"
+                        cachedDataType="dbDate"
                         cachedName="date"
                         externalMetadataColumnId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].ExternalColumns[date]"
                         lineageId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].Columns[date]" />
@@ -1546,7 +1613,7 @@
                         lineageId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].Columns[pair1_country2]" />
                       <inputColumn
                         refId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].Columns[pair1_seed]"
-                        cachedDataType="wstr" cachedLength="10"
+                        cachedDataType="i4"
                         cachedName="pair1_seed"
                         externalMetadataColumnId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].ExternalColumns[pair1_seed]"
                         lineageId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].Columns[pair1_seed]" />
@@ -1576,7 +1643,7 @@
                         lineageId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].Columns[pair2_country2]" />
                       <inputColumn
                         refId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].Columns[pair2_seed]"
-                        cachedDataType="wstr" cachedLength="10"
+                        cachedDataType="i4"
                         cachedName="pair2_seed"
                         externalMetadataColumnId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].ExternalColumns[pair2_seed]"
                         lineageId="Package\Foreach tournois\matchs\Tournament CSV.Outputs[Flat File Source Output].Columns[pair2_seed]" />
@@ -1611,7 +1678,7 @@
                         name="tournament" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].ExternalColumns[date]"
-                        dataType="wstr" length="20"
+                        dataType="dbDate"
                         name="date" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].ExternalColumns[round]"
@@ -1635,7 +1702,7 @@
                         name="pair1_country2" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].ExternalColumns[pair1_seed]"
-                        dataType="wstr" length="10"
+                        dataType="i4"
                         name="pair1_seed" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].ExternalColumns[pair2_player1]"
@@ -1655,7 +1722,7 @@
                         name="pair2_country2" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].ExternalColumns[pair2_seed]"
-                        dataType="wstr" length="10"
+                        dataType="i4"
                         name="pair2_seed" />
                       <externalMetadataColumn
                         refId="Package\Foreach tournois\matchs\Matchs_SA.Inputs[OLE DB Destination Input].ExternalColumns[winner]"
@@ -1847,7 +1914,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\calendrier\calendar 2023.Outputs[Flat File Source Output].Columns[start_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\calendrier\calendar 2023.Outputs[Flat File Source Output].ExternalColumns[start_date]"
@@ -1867,7 +1934,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\calendrier\calendar 2023.Outputs[Flat File Source Output].Columns[end_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\calendrier\calendar 2023.Outputs[Flat File Source Output].ExternalColumns[end_date]"
@@ -1902,11 +1969,11 @@
                       name="country" />
                     <externalMetadataColumn
                       refId="Package\calendrier\calendar 2023.Outputs[Flat File Source Output].ExternalColumns[start_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       name="start_date" />
                     <externalMetadataColumn
                       refId="Package\calendrier\calendar 2023.Outputs[Flat File Source Output].ExternalColumns[end_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       name="end_date" />
                   </externalMetadataColumns>
                 </output>
@@ -2105,7 +2172,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\calendrier\calendar 2024.Outputs[Flat File Source Output].Columns[start_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\calendrier\calendar 2024.Outputs[Flat File Source Output].ExternalColumns[start_date]"
@@ -2125,7 +2192,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\calendrier\calendar 2024.Outputs[Flat File Source Output].Columns[end_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\calendrier\calendar 2024.Outputs[Flat File Source Output].ExternalColumns[end_date]"
@@ -2160,11 +2227,11 @@
                       name="country" />
                     <externalMetadataColumn
                       refId="Package\calendrier\calendar 2024.Outputs[Flat File Source Output].ExternalColumns[start_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       name="start_date" />
                     <externalMetadataColumn
                       refId="Package\calendrier\calendar 2024.Outputs[Flat File Source Output].ExternalColumns[end_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       name="end_date" />
                   </externalMetadataColumns>
                 </output>
@@ -2363,7 +2430,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\calendrier\calendar 2026.Outputs[Flat File Source Output].Columns[start_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\calendrier\calendar 2026.Outputs[Flat File Source Output].ExternalColumns[start_date]"
@@ -2383,7 +2450,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\calendrier\calendar 2026.Outputs[Flat File Source Output].Columns[end_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\calendrier\calendar 2026.Outputs[Flat File Source Output].ExternalColumns[end_date]"
@@ -2418,11 +2485,11 @@
                       name="country" />
                     <externalMetadataColumn
                       refId="Package\calendrier\calendar 2026.Outputs[Flat File Source Output].ExternalColumns[start_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       name="start_date" />
                     <externalMetadataColumn
                       refId="Package\calendrier\calendar 2026.Outputs[Flat File Source Output].ExternalColumns[end_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       name="end_date" />
                   </externalMetadataColumns>
                 </output>
@@ -2529,6 +2596,264 @@
               </outputs>
             </component>
             <component
+              refId="Package\calendrier\calendar 2025"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="calendar 2025"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\calendrier\calendar 2025.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Calendar 2025 CSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[Calendar 2025 CSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[tournament]"
+                      dataType="wstr" length="150"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].ExternalColumns[tournament]"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[tournament]"
+                      name="tournament"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[category]"
+                      dataType="wstr" length="100"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].ExternalColumns[category]"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[category]"
+                      name="category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[country]"
+                      dataType="wstr" length="100"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].ExternalColumns[country]"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[country]"
+                      name="country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[start_date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].ExternalColumns[start_date]"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[start_date]"
+                      name="start_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[end_date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].ExternalColumns[end_date]"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[end_date]"
+                      name="end_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].ExternalColumns[tournament]"
+                      dataType="wstr" length="150"
+                      name="tournament" />
+                    <externalMetadataColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].ExternalColumns[category]"
+                      dataType="wstr" length="100"
+                      name="category" />
+                    <externalMetadataColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].ExternalColumns[country]"
+                      dataType="wstr" length="100"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].ExternalColumns[start_date]"
+                      dataType="dbDate"
+                      name="start_date" />
+                    <externalMetadataColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].ExternalColumns[end_date]"
+                      dataType="dbDate"
+                      name="end_date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\calendrier\calendar 2025.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\calendrier\source 2025"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="source 2025"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\calendrier\source 2025.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\calendrier\source 2025.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\calendrier\source 2025.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\calendrier\source 2025.Outputs[Derived Column Output].Columns[source_file]"
+                      dataType="wstr" length="260"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\calendrier\source 2025.Outputs[Derived Column Output].Columns[source_file]"
+                      name="source_file"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">&quot;calendar-2025.csv&quot;</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">&quot;calendar-2025.csv&quot;</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\calendrier\source 2025.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\calendrier\source 2025.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\calendrier\source 2025.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\calendrier\source 2025.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\calendrier\source 2025.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\calendrier\source 2025.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\calendrier\Union All"
               componentClassID="Microsoft.UnionAll"
               contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -2581,7 +2906,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\calendrier\Union All.Inputs[Union All Input 1].Columns[start_date]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="dbDate"
                       cachedName="start_date"
                       lineageId="Package\calendrier\calendar 2023.Outputs[Flat File Source Output].Columns[start_date]">
                       <properties>
@@ -2594,7 +2919,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\calendrier\Union All.Inputs[Union All Input 1].Columns[end_date]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="dbDate"
                       cachedName="end_date"
                       lineageId="Package\calendrier\calendar 2023.Outputs[Flat File Source Output].Columns[end_date]">
                       <properties>
@@ -2667,7 +2992,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\calendrier\Union All.Inputs[Union All Input 2].Columns[start_date]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="dbDate"
                       cachedName="start_date"
                       lineageId="Package\calendrier\calendar 2024.Outputs[Flat File Source Output].Columns[start_date]">
                       <properties>
@@ -2680,7 +3005,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\calendrier\Union All.Inputs[Union All Input 2].Columns[end_date]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="dbDate"
                       cachedName="end_date"
                       lineageId="Package\calendrier\calendar 2024.Outputs[Flat File Source Output].Columns[end_date]">
                       <properties>
@@ -2753,7 +3078,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\calendrier\Union All.Inputs[Union All Input 3].Columns[start_date]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="dbDate"
                       cachedName="start_date"
                       lineageId="Package\calendrier\calendar 2026.Outputs[Flat File Source Output].Columns[start_date]">
                       <properties>
@@ -2766,7 +3091,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\calendrier\Union All.Inputs[Union All Input 3].Columns[end_date]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="dbDate"
                       cachedName="end_date"
                       lineageId="Package\calendrier\calendar 2026.Outputs[Flat File Source Output].Columns[end_date]">
                       <properties>
@@ -2795,9 +3120,95 @@
                 </input>
                 <input
                   refId="Package\calendrier\Union All.Inputs[Union All Input 4]"
-                  dangling="true"
                   hasSideEffects="true"
                   name="Union All Input 4">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\calendrier\Union All.Inputs[Union All Input 4].Columns[tournament]"
+                      cachedDataType="wstr" cachedLength="150"
+                      cachedName="tournament"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[tournament]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\calendrier\Union All.Outputs[Union All Output 1].Columns[tournament]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\calendrier\Union All.Inputs[Union All Input 4].Columns[category]"
+                      cachedDataType="wstr" cachedLength="100"
+                      cachedName="category"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[category]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\calendrier\Union All.Outputs[Union All Output 1].Columns[category]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\calendrier\Union All.Inputs[Union All Input 4].Columns[country]"
+                      cachedDataType="wstr" cachedLength="100"
+                      cachedName="country"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[country]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\calendrier\Union All.Outputs[Union All Output 1].Columns[country]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\calendrier\Union All.Inputs[Union All Input 4].Columns[start_date]"
+                      cachedDataType="dbDate"
+                      cachedName="start_date"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[start_date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\calendrier\Union All.Outputs[Union All Output 1].Columns[start_date]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\calendrier\Union All.Inputs[Union All Input 4].Columns[end_date]"
+                      cachedDataType="dbDate"
+                      cachedName="end_date"
+                      lineageId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output].Columns[end_date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\calendrier\Union All.Outputs[Union All Output 1].Columns[end_date]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\calendrier\Union All.Inputs[Union All Input 4].Columns[source_file]"
+                      cachedDataType="wstr" cachedLength="260"
+                      cachedName="source_file"
+                      lineageId="Package\calendrier\source 2025.Outputs[Derived Column Output].Columns[source_file]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\calendrier\Union All.Outputs[Union All Output 1].Columns[source_file]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\calendrier\Union All.Inputs[Union All Input 5]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 5">
                   <externalMetadataColumns />
                 </input>
               </inputs>
@@ -2823,12 +3234,12 @@
                       name="country" />
                     <outputColumn
                       refId="Package\calendrier\Union All.Outputs[Union All Output 1].Columns[start_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       lineageId="Package\calendrier\Union All.Outputs[Union All Output 1].Columns[start_date]"
                       name="start_date" />
                     <outputColumn
                       refId="Package\calendrier\Union All.Outputs[Union All Output 1].Columns[end_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       lineageId="Package\calendrier\Union All.Outputs[Union All Output 1].Columns[end_date]"
                       name="end_date" />
                     <outputColumn
@@ -2933,13 +3344,13 @@
                       lineageId="Package\calendrier\Union All.Outputs[Union All Output 1].Columns[country]" />
                     <inputColumn
                       refId="Package\calendrier\Calendrier_SA.Inputs[OLE DB Destination Input].Columns[start_date]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="dbDate"
                       cachedName="start_date"
                       externalMetadataColumnId="Package\calendrier\Calendrier_SA.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
                       lineageId="Package\calendrier\Union All.Outputs[Union All Output 1].Columns[start_date]" />
                     <inputColumn
                       refId="Package\calendrier\Calendrier_SA.Inputs[OLE DB Destination Input].Columns[end_date]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="dbDate"
                       cachedName="end_date"
                       externalMetadataColumnId="Package\calendrier\Calendrier_SA.Inputs[OLE DB Destination Input].ExternalColumns[end_date]"
                       lineageId="Package\calendrier\Union All.Outputs[Union All Output 1].Columns[end_date]" />
@@ -2966,11 +3377,11 @@
                       name="country" />
                     <externalMetadataColumn
                       refId="Package\calendrier\Calendrier_SA.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       name="start_date" />
                     <externalMetadataColumn
                       refId="Package\calendrier\Calendrier_SA.Inputs[OLE DB Destination Input].ExternalColumns[end_date]"
-                      dataType="wstr" length="20"
+                      dataType="dbDate"
                       name="end_date" />
                     <externalMetadataColumn
                       refId="Package\calendrier\Calendrier_SA.Inputs[OLE DB Destination Input].ExternalColumns[source_file]"
@@ -3041,6 +3452,16 @@
               endId="Package\calendrier\Calendrier_SA.Inputs[OLE DB Destination Input]"
               name="Union All Output 1"
               startId="Package\calendrier\Union All.Outputs[Union All Output 1]" />
+          <path
+              refId="Package\calendrier.Paths[Flat File Source Output 3]"
+              endId="Package\calendrier\source 2025.Inputs[Derived Column Input]"
+              name="Flat File Source Output 3"
+              startId="Package\calendrier\calendar 2025.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\calendrier.Paths[Derived Column Output 3]"
+              endId="Package\calendrier\Union All.Inputs[Union All Input 4]"
+              name="Derived Column Output 3"
+              startId="Package\calendrier\source 2025.Outputs[Derived Column Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3149,7 +3570,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\joueurs\men players.Outputs[Flat File Source Output].Columns[points]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\joueurs\men players.Outputs[Flat File Source Output].ExternalColumns[points]"
@@ -3169,7 +3590,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\joueurs\men players.Outputs[Flat File Source Output].Columns[position]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\joueurs\men players.Outputs[Flat File Source Output].ExternalColumns[position]"
@@ -3220,11 +3641,11 @@
                       name="country" />
                     <externalMetadataColumn
                       refId="Package\joueurs\men players.Outputs[Flat File Source Output].ExternalColumns[points]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       name="points" />
                     <externalMetadataColumn
                       refId="Package\joueurs\men players.Outputs[Flat File Source Output].ExternalColumns[position]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       name="position" />
                     <externalMetadataColumn
                       refId="Package\joueurs\men players.Outputs[Flat File Source Output].ExternalColumns[move]"
@@ -3407,7 +3828,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\joueurs\women players.Outputs[Flat File Source Output].Columns[points]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\joueurs\women players.Outputs[Flat File Source Output].ExternalColumns[points]"
@@ -3427,7 +3848,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\joueurs\women players.Outputs[Flat File Source Output].Columns[position]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\joueurs\women players.Outputs[Flat File Source Output].ExternalColumns[position]"
@@ -3478,11 +3899,11 @@
                       name="country" />
                     <externalMetadataColumn
                       refId="Package\joueurs\women players.Outputs[Flat File Source Output].ExternalColumns[points]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       name="points" />
                     <externalMetadataColumn
                       refId="Package\joueurs\women players.Outputs[Flat File Source Output].ExternalColumns[position]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       name="position" />
                     <externalMetadataColumn
                       refId="Package\joueurs\women players.Outputs[Flat File Source Output].ExternalColumns[move]"
@@ -3632,7 +4053,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\joueurs\Union All.Inputs[Union All Input 1].Columns[points]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="i4"
                       cachedName="points"
                       lineageId="Package\joueurs\men players.Outputs[Flat File Source Output].Columns[points]">
                       <properties>
@@ -3645,7 +4066,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\joueurs\Union All.Inputs[Union All Input 1].Columns[position]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="i4"
                       cachedName="position"
                       lineageId="Package\joueurs\men players.Outputs[Flat File Source Output].Columns[position]">
                       <properties>
@@ -3718,7 +4139,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\joueurs\Union All.Inputs[Union All Input 2].Columns[points]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="i4"
                       cachedName="points"
                       lineageId="Package\joueurs\women players.Outputs[Flat File Source Output].Columns[points]">
                       <properties>
@@ -3731,7 +4152,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\joueurs\Union All.Inputs[Union All Input 2].Columns[position]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="i4"
                       cachedName="position"
                       lineageId="Package\joueurs\women players.Outputs[Flat File Source Output].Columns[position]">
                       <properties>
@@ -3796,12 +4217,12 @@
                       name="country" />
                     <outputColumn
                       refId="Package\joueurs\Union All.Outputs[Union All Output 1].Columns[points]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       lineageId="Package\joueurs\Union All.Outputs[Union All Output 1].Columns[points]"
                       name="points" />
                     <outputColumn
                       refId="Package\joueurs\Union All.Outputs[Union All Output 1].Columns[position]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       lineageId="Package\joueurs\Union All.Outputs[Union All Output 1].Columns[position]"
                       name="position" />
                     <outputColumn
@@ -3905,13 +4326,13 @@
                       lineageId="Package\joueurs\Union All.Outputs[Union All Output 1].Columns[country]" />
                     <inputColumn
                       refId="Package\joueurs\Joueurs_SA.Inputs[OLE DB Destination Input].Columns[points]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="i4"
                       cachedName="points"
                       externalMetadataColumnId="Package\joueurs\Joueurs_SA.Inputs[OLE DB Destination Input].ExternalColumns[points]"
                       lineageId="Package\joueurs\Union All.Outputs[Union All Output 1].Columns[points]" />
                     <inputColumn
                       refId="Package\joueurs\Joueurs_SA.Inputs[OLE DB Destination Input].Columns[position]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="i4"
                       cachedName="position"
                       externalMetadataColumnId="Package\joueurs\Joueurs_SA.Inputs[OLE DB Destination Input].ExternalColumns[position]"
                       lineageId="Package\joueurs\Union All.Outputs[Union All Output 1].Columns[position]" />
@@ -3940,11 +4361,11 @@
                       name="country" />
                     <externalMetadataColumn
                       refId="Package\joueurs\Joueurs_SA.Inputs[OLE DB Destination Input].ExternalColumns[points]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       name="points" />
                     <externalMetadataColumn
                       refId="Package\joueurs\Joueurs_SA.Inputs[OLE DB Destination Input].ExternalColumns[position]"
-                      dataType="wstr" length="20"
+                      dataType="i4"
                       name="position" />
                     <externalMetadataColumn
                       refId="Package\joueurs\Joueurs_SA.Inputs[OLE DB Destination Input].ExternalColumns[move]"
@@ -4197,7 +4618,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\produits\padel rackets.Outputs[Flat File Source Output].Columns[price]"
-                      dataType="wstr" length="20"
+                      dataType="numeric" precision="10" scale="2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\produits\padel rackets.Outputs[Flat File Source Output].ExternalColumns[price]"
@@ -4544,7 +4965,7 @@
                       name="created_at" />
                     <externalMetadataColumn
                       refId="Package\produits\padel rackets.Outputs[Flat File Source Output].ExternalColumns[price]"
-                      dataType="wstr" length="20"
+                      dataType="numeric" precision="10" scale="2"
                       name="price" />
                     <externalMetadataColumn
                       refId="Package\produits\padel rackets.Outputs[Flat File Source Output].ExternalColumns[sku]"
@@ -4747,7 +5168,7 @@
                       lineageId="Package\produits\padel rackets.Outputs[Flat File Source Output].Columns[created_at]" />
                     <inputColumn
                       refId="Package\produits\Produits_SA.Inputs[OLE DB Destination Input].Columns[price]"
-                      cachedDataType="wstr" cachedLength="20"
+                      cachedDataType="numeric" cachedPrecision="10" cachedScale="2"
                       cachedName="price"
                       externalMetadataColumnId="Package\produits\Produits_SA.Inputs[OLE DB Destination Input].ExternalColumns[price]"
                       lineageId="Package\produits\padel rackets.Outputs[Flat File Source Output].Columns[price]" />
@@ -4870,7 +5291,7 @@
                       name="created_at" />
                     <externalMetadataColumn
                       refId="Package\produits\Produits_SA.Inputs[OLE DB Destination Input].ExternalColumns[price]"
-                      dataType="wstr" length="20"
+                      dataType="numeric" precision="10" scale="2"
                       name="price" />
                     <externalMetadataColumn
                       refId="Package\produits\Produits_SA.Inputs[OLE DB Destination Input].ExternalColumns[sku]"
@@ -6270,6 +6691,14 @@
           Size="170,41.6"
           Id="Package\calendrier\source 2026"
           TopLeft="440,130" />
+        <NodeLayout
+          Size="170,41.6"
+          Id="Package\calendrier\calendar 2025"
+          TopLeft="650,30" />
+        <NodeLayout
+          Size="170,41.6"
+          Id="Package\calendrier\source 2025"
+          TopLeft="650,130" />
         <NodeLayout
           Size="170,41.6"
           Id="Package\calendrier\Union All"
