@@ -52,7 +52,8 @@ CREATE TABLE dbo.DIM_TOURNAMENT (
 /* "Round of 64" ... "Final", as in the files */
 CREATE TABLE dbo.DIM_ROUND (
     round_key   INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_DIM_ROUND PRIMARY KEY,
-    round_name  NVARCHAR(50) NOT NULL CONSTRAINT UQ_DIM_ROUND UNIQUE         -- business key
+    round_name  NVARCHAR(50) NOT NULL CONSTRAINT UQ_DIM_ROUND UNIQUE,        -- business key
+    sort_order  INT          NOT NULL                                     -- 1 = Round of 64 ... 7 = Final
 );
 
 /* one row per score written in the files ("62 67(7) 62", "46 11 RET", "WO") */
@@ -113,14 +114,14 @@ CREATE TABLE dbo.FACT_MATCH (
     date_key          INT NOT NULL CONSTRAINT FK_FM_date       REFERENCES dbo.DIM_DATE(date_key),
     tournament_key    INT NOT NULL CONSTRAINT FK_FM_tournament REFERENCES dbo.DIM_TOURNAMENT(tournament_key),
     round_key         INT NOT NULL CONSTRAINT FK_FM_round      REFERENCES dbo.DIM_ROUND(round_key),
-    match_number      INT NOT NULL,                              -- degenerate dimension (match_id)
+    match_number      INT NOT NULL,                              -- degenerate dimension (match_id), information only
     pair1_key         INT NOT NULL CONSTRAINT FK_FM_pair1      REFERENCES dbo.DIM_PAIR(pair_key),
     pair2_key         INT NOT NULL CONSTRAINT FK_FM_pair2      REFERENCES dbo.DIM_PAIR(pair_key),
     winning_pair_key  INT NOT NULL CONSTRAINT FK_FM_winner     REFERENCES dbo.DIM_PAIR(pair_key),
     profile_key       INT NOT NULL CONSTRAINT FK_FM_profile    REFERENCES dbo.DIM_MATCH_PROFILE(profile_key),
     seed_pair1        INT NOT NULL,                              -- 0 = not seeded
     seed_pair2        INT NOT NULL,
-    CONSTRAINT PK_FACT_MATCH PRIMARY KEY (tournament_key, match_number)
+    CONSTRAINT PK_FACT_MATCH PRIMARY KEY (tournament_key, round_key, pair1_key, pair2_key)   -- one match = tournament + round + the 2 pairs
 );
 
 /* grain : 1 row = 1 product in the catalogue */
